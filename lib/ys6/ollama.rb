@@ -9,7 +9,7 @@ module YS6
   module Ollama
     class << self
       def about_page(url = "http://localhost/")
-        prompt = "Read the content and summarize it very briefly. Just give me the answer."
+        prompt = "Read the content and summarize it in one or two sentences. Just give me the answer."
         content = YS6::Http.get_body_contents(url)
         proc_llm("#{prompt}\n---\n#{content}")
       end
