@@ -2,7 +2,11 @@
 
 require_relative "ys6/version"
 
-module Ys6
+# ys6
+module YS6
   class Error < StandardError; end
-  # Your code goes here...
+
+  LLM_MODEL = "gemma3"
 end
+
+Dir.glob("#{__dir__}/ys6/*.rb").each { |lib| require(lib) }

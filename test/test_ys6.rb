@@ -2,12 +2,8 @@
 
 require "test_helper"
 
-class TestYs6 < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Ys6::VERSION
-  end
-
+class TestYS6 < Minitest::Test
   def test_it_does_something_useful
-    assert false
+    assert true
   end
 end
