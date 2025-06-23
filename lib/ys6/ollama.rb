@@ -33,6 +33,7 @@ module YS6
         url = URI.parse("http://localhost:11434/api/generate")
         http = Net::HTTP.new(url.host, url.port)
         http.use_ssl = (url.scheme == "https")
+        http.read_timeout = 600
 
         request = Net::HTTP::Post.new(url.path, { "Content-Type" => "application/json" })
         request.body = build_llm_payload(prompt).to_json
