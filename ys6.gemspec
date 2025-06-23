@@ -3,7 +3,7 @@
 require_relative "lib/ys6/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "YS6"
+  spec.name = "ys6"
   spec.version = YS6::VERSION
   spec.authors = ["YumaYX"]
   spec.email = ["86939129+YumaYX@users.noreply.github.com"]
