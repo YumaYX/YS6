@@ -2,6 +2,4 @@
 # frozen_string_literal: true
 
 require "ys6"
-abort " Usage:\n  #{File.basename(command)} <ARGV>" if ARGV.empty?
-
 puts YS6::Ollama.proc_llm(ARGV.join(" "))
